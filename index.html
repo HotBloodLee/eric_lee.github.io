@@ -1,23 +1,41 @@
 <!DOCTYPE HTML> <!-- HTML5标准网页声明 -->
 <HTML> <!-- HTML为根标签，代表整个网页 -->
 
-<head> <!-- head为头部标签，一般用来描述文档的各种属性和信息， 包括标题等-->
-  <meta charset="UTF-8"> <!-- 设置字符集为utf-8 -->
-  <link rel="icon" href="imgs/LOGO2.jpg">
-  <title>Welcome!</title> <!-- 设置浏览器的标题 -->
-</head>
+	<head> <!-- head为头部标签，一般用来描述文档的各种属性和信息， 包括标题等-->
+		<meta charset="UTF-8"> <!-- 设置字符集为utf-8 -->
+		<link rel="icon" href="imgs/LOGO2.jpg">
+		<title>Welcome!</title> <!-- 设置浏览器的标题 -->
+		<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+		<style>
+			@media (max-width: 767px) {
+				body {
+					padding: 15px;
+				}
+			}
 
-<!-- 网页所有的内容都写在body标签内 -->
-<body> 
-  <h1>M-Lab</h1>
-  <h2>our current works</h2>
-  <h3>1、GNNQU</h3>
-  code is coming soon!
-  <h3>2、Heterogeneous sources for Med</h3>
-  code is coming soon!
-  <h3>3、LLM for Med education</h3>
-  code is coming soon!
+			body {
+				box-sizing: border-box;
+				min-width: 200px;
+				max-width: 980px;
+				margin: 0 auto;
+				padding: 45px;
+			}
+		</style>
+		<script>
+			function loadMarkdownFile() {
+				fetch('new_file.md')
+					.then(response => response.text())
+					.then(markdown => {
+						const html = marked.parse(markdown);
+						document.getElementById('markdown-content').innerHTML = html;
+					});
+			}
+		</script>
+	</head>
 
-</body>
+	<!-- 网页所有的内容都写在body标签内 -->
+	<body onload="loadMarkdownFile()">
+		<div id="markdown-content"></div>
+	</body>
 
 </HTML>
