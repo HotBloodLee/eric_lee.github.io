@@ -12,17 +12,18 @@ link: [Heterogeneous-Sources-for-Multi-Docs](https://github.com/HotBloodLee/Hete
 
 以CLOCQ为原型，搭建一个可以用于检索多文档证据的异构知识库，用于下游任务。
 
-初期以医学领域展开
 ### 2、Multi Docs with LM
 link: [Multi-Docs-with-LM](https://github.com/HotBloodLee/Multi-Docs-with-LM)
 
 搭建适应多文档的LM，基于微调、prompt等方式
 
-### 3、协调工具
+### 3、FileWharf
 
-暂定
+link: [FileWharf](https://github.com/HotBloodLee/FileWharf)
 
-### 4、Code Company？
+本地跨设备的数据及时共享
+
+### 4、CodeFam
 
 未知
 ___
