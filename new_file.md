@@ -23,9 +23,13 @@ link: [FileWharf](https://github.com/HotBloodLee/FileWharf)
 
 本地跨设备的数据及时共享
 
-### 4、CodeFam
+### 4、Personal Assistant
 
-未知
+- LM质量保证：
+- GPT数据爬取：
+- 教师数据生成：
+- 端侧LM训练：
+- 工作流质量保证：
 ___
 ## Contact us
 ___
